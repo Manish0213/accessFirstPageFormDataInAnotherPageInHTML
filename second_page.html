@@ -1,0 +1,25 @@
+<!-- second_page.html -->
+<h1>Data from Form</h1>
+<div id="formData"></div>
+
+<script>
+    // Retrieve URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    // console.log(window.location.search);
+    // console.log(window.location.href);
+    // const queryString = urlParams.toString();
+    // console.log(queryString);
+    // const formattedUrlParams = new URLSearchParams(queryString);
+    // console.log(formattedUrlParams);
+    // console.log(formattedUrlParams.toString());
+
+    // Retrieve form data from URL parameters
+    const name = urlParams.get('name');
+    const email = urlParams.get('email');
+
+    // Display form data on the page
+    document.getElementById('formData').innerHTML = `
+        <p>Name: ${name}</p>
+        <p>Email: ${email}</p>
+    `;
+</script>

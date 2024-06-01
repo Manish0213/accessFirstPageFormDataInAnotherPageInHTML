@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEMO</title>
+</head>
+<body>
+    <!-- Form HTML file -->
+<form id="myForm" action="second_page.html" method="get">
+    <!-- Form fields -->
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <button type="submit">Submit</button>
+</form>
+
+<!-- <script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form from submitting
+
+        // Retrieve form data
+        const formData = new FormData(this);
+        
+        // Convert form data to URLSearchParams for easy retrieval on next page
+        const params = new URLSearchParams(formData);
+
+        // Redirect to second_page.html with form data as URL parameters
+        window.location.href = 'second_page.html?' + params.toString();
+    });
+</script> -->
+
+</body>
+</html>
